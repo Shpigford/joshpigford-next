@@ -6,7 +6,11 @@ module.exports = {
     // be as specific as possible with your content configuration.
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['var(--font-space-mono)']
+      }
+    },
   },
   plugins: [],
 };

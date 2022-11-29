@@ -6,7 +6,7 @@ export const siteTitle = 'Josh Pigford';
 
 export default function Layout({ children, home }) {
   return (
-    <div>
+    <>
       <Head>
         <title>{siteTitle}</title>
         <link rel="icon" href="/favicon.ico" />
@@ -26,10 +26,23 @@ export default function Layout({ children, home }) {
         <meta property="twitter:description" content={siteTitle} />
         <meta property="twitter:image" content="" />
       </Head>
-      <header>
-
+      <header class="flex mb-10">
+        <div class="flex-none mr-8">
+          <Image
+            priority
+            src="/images/joshpigford-avatar.png"
+            height={144}
+            width={144}
+            alt="Josh Pigford"
+            className="w-36 h-36 rounded-full"
+          />
+        </div>
+        <div class="flex-auto mt-3">
+          <h1 class="mb-3 text-3xl font-black">{siteTitle}</h1>
+          <p class="mb-4">Maker. Dabbler. I can't stop starting things. Bearded.</p>
+        </div>
       </header>
-      <main>{children}</main>
-    </div>
+      {children}
+    </>
   );
 }
