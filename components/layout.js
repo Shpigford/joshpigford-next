@@ -57,7 +57,7 @@ export default function Layout(props) {
       {props.children}
 
       <footer className="mt-20 text-sm text-gray-400">
-        This is a footer and I have no idea what to put here. <a href="https://github.com/Shpigford/joshpigford.com/commits/main">Changelog</a>.
+        This is a footer and I have no idea what to put here. <a href="https://github.com/Shpigford/joshpigford-next/commits/main">Changelog</a>.
       </footer>
     </>
   );
