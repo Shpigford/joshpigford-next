@@ -12,5 +12,10 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
+  colors: {
+    blue: '#2d3fd1'
+  }
 };

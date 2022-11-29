@@ -10,7 +10,7 @@ const spaceMono = Space_Mono({
 
 function App({ Component, pageProps }) {
   return (
-    <main className={`${spaceMono.variable} font-sans`}>
+    <main className={`${spaceMono.variable} font-sans lowercase`}>
       <Component {...pageProps} />
     </main>
   )

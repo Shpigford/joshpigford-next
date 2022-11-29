@@ -38,3 +38,7 @@ html:before {
 body {
   margin: 5% 8% 3% 8%;
 }
+
+iframe {
+  display: inline!important;
+}

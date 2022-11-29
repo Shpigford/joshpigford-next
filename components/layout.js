@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -26,8 +27,8 @@ export default function Layout({ children, home }) {
         <meta property="twitter:description" content={siteTitle} />
         <meta property="twitter:image" content="" />
       </Head>
-      <header class="flex mb-10">
-        <div class="flex-none mr-8">
+      <header className="flex mb-10">
+        <div className="flex-none mr-8">
           <Image
             priority
             src="/images/joshpigford-avatar.png"
@@ -37,12 +38,24 @@ export default function Layout({ children, home }) {
             className="w-36 h-36 rounded-full"
           />
         </div>
-        <div class="flex-auto mt-3">
-          <h1 class="mb-3 text-3xl font-black">{siteTitle}</h1>
-          <p class="mb-4">Maker. Dabbler. I can't stop starting things. Bearded.</p>
+        <div className="flex-auto mt-3">
+          <h1 className="mb-3 text-3xl font-black inline">{siteTitle}</h1>
+          <div className='inline ml-4 relative -top-1.5'>
+            <a href="https://twitter.com/Shpigford?ref_src=twsrc%5Etfw" className="twitter-follow-button" data-size="large" data-dnt="true" data-show-count="true">Follow @Shpigford</a>
+            <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
+          </div>
+          <p className="mb-4">Maker. Dabbler. I can't stop starting things. Bearded.</p>
+          <p className='font-bold'>
+            &rarr; <Link href="/investments">Investments</Link>
+          </p>
         </div>
       </header>
+
       {children}
+
+      <footer className="mt-20 text-sm text-gray-400">
+        This is a footer and I have no idea what to put here. <a href="https://github.com/Shpigford/joshpigford.com/commits/main">Changelog</a>.
+      </footer>
     </>
   );
 }
