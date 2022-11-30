@@ -49,7 +49,7 @@ export default function Layout(props) {
           </div>
           <p className="mb-4">Maker. Dabbler. I can't stop starting things. Bearded.</p>
           <p className='font-bold'>
-            &rarr; <Link href="/gear">Gear</Link>, <Link href="/investments">Investments</Link>
+            &rarr; <Link href="/gear">Gear</Link>, <Link href="/interviews">Interviews</Link>, <Link href="/investments">Investments</Link>
           </p>
         </div>
       </header>
