@@ -1,7 +1,25 @@
 /* eslint-disable react/no-unescaped-entities */
 import Layout from '../../components/layout'
+import { GetStaticProps } from "next"
+import Project, { ProjectProps } from "../../components/Project"
+import prisma from '../../lib/prisma'
 
-export default function Now() {
+export const getStaticProps: GetStaticProps = async () => {
+  const feed = await prisma.project.findMany({
+    orderBy: { year: 'desc' },
+  })
+
+  return {
+    props: { feed },
+    revalidate: 10
+  }
+}
+
+type Props = {
+  feed: ProjectProps[]
+}
+
+const Projects: React.FC<Props> = (props) => {
   return (
     <Layout title="Projects" desc="I've worked on (and continue to work on) an absurd number of things.">
       <div className="prose max-w-none">
@@ -19,13 +37,9 @@ export default function Now() {
           </thead>
           <tbody className="text-sm">
 
-            <tr className="group odd:bg-white even:bg-gray-100 hover:bg-blue-700">
-              <td className="px-2 py-3"><a href="#" className="block group-hover:text-white">project name</a></td>
-              <td><a href="#" className="block group-hover:text-white">project year</a></td>
-              <td><a href="#" className="block group-hover:text-white">project description</a></td>
-              <td><a href="#" className="block group-hover:text-white">project outcome</a></td>
-            </tr>
-
+            {props.feed.map((project) => (
+              <Project key={project.id} project={project} />
+            ))}
           </tbody>
         </table>
 
@@ -33,3 +47,5 @@ export default function Now() {
     </Layout>
   )
 }
+
+export default Projects
