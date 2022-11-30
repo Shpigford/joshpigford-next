@@ -6,9 +6,6 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <Layout home>
-      <Head>
-        <title>{siteTitle}</title>
-      </Head>
       <section className='prose max-w-none'>
         <h2 className="mb-2">What I'm working on</h2>
         <p>In 2021 I founded <a href="https://maybe.co">Maybe</a> where we're helping folks take control of their financial future. I also run <a href="https://lasertweets.co">Laser Tweets</a> because we all need something ridiculous to do.</p>

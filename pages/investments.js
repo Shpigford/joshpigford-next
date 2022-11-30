@@ -5,9 +5,6 @@ import Head from 'next/head';
 export default function Investments() {
   return (
     <Layout title="Investments" desc="I've been doing tiny investments in startups since 2021, primarily to just get my feet wet and to diversify my high-level personal finance holdings. Here are the investments I've made.">
-      <Head>
-        <title>Investments</title>
-      </Head>
       <div className="prose max-w-none">
         <h1>Investments</h1>
         <p>I've been doing tiny investments in startups since 2021, primarily to just get my feet wet and to diversify my high-level personal finance holdings. Here are the investments I've made.</p>
