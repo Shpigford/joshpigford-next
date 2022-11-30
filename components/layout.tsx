@@ -50,7 +50,7 @@ export default function Layout(props: { title?: any; desc?: any; children?: any;
           </div>
           <p className="mb-4">Maker. Dabbler. I can't stop starting things. Bearded.</p>
           <p className='font-bold'>
-            &rarr; <Link href="/gear">Gear</Link>, <Link href="/interviews">Interviews</Link>, <Link href="/investments">Investments</Link>, <Link href="/now">Now</Link>, <Link href="/podcasts">Podcasts</Link>, <Link href="/reading">Reading</Link>
+            &rarr; <Link href="/gear">Gear</Link>, <Link href="/interviews">Interviews</Link>, <Link href="/investments">Investments</Link>, <Link href="/now">Now</Link>, <Link href="/podcasts">Podcasts</Link>, <Link href="/projects">Projects</Link>, <Link href="/reading">Reading</Link>
           </p>
         </div>
       </header>
