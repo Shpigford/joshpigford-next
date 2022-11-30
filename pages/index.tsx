@@ -13,12 +13,12 @@ export default function Home() {
         <hr />
 
         <h2 className="mb-2">Interviews</h2>
-        <p>Over the years I've <a href="/interviews">done some 40+ interviews</a>, mostly about business.</p>
+        <p>Over the years I've <Link href="/interviews">done some 40+ interviews</Link>, mostly about business.</p>
 
         <hr />
 
         <h2 className="mb-2">Past projects</h2>
-        <p>I've been a professional maker of things for 15+ years. <a href="/projects">See a thorough list of everything I've ever made &rarr;</a></p>
+        <p>I've been a professional maker of things for 15+ years. <Link href="/projects">See a thorough list of everything I've ever made &rarr;</Link></p>
 
         <hr />
 
@@ -28,7 +28,7 @@ export default function Home() {
         <hr />
 
         <h2 className="mb-2">Podcasts</h2>
-        <p>I listen to way too many podcasts. <a href="/podcasts">See what I'm listening to</a> so you can also listen to way too many podcasts.</p>
+        <p>I listen to way too many podcasts. <Link href="/podcasts">See what I'm listening to</Link> so you can also listen to way too many podcasts.</p>
 
         <hr />
 
