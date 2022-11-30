@@ -1,3 +1,4 @@
+import { AppProps } from 'next/app';
 import '../styles/globals.css'
 import { Space_Mono } from '@next/font/google'
 
@@ -8,7 +9,7 @@ const spaceMono = Space_Mono({
   variable: '--font-space-mono',
 })
 
-function App({ Component, pageProps }) {
+function App({ Component, pageProps }: AppProps) {
   return (
     <main className={`${spaceMono.variable} font-sans lowercase`}>
       <Component {...pageProps} />

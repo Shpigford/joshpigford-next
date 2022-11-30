@@ -1,11 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
 import Head from 'next/head';
-import Layout, { siteTitle } from '../components/layout';
+import Layout from '../components/layout';
 import Link from 'next/link';
 
 export default function Home() {
   return (
-    <Layout home>
+    <Layout>
       <section className='prose max-w-none'>
         <h2 className="mb-2">What I'm working on</h2>
         <p>In 2021 I founded <a href="https://maybe.co">Maybe</a> where we're helping folks take control of their financial future. I also run <a href="https://lasertweets.co">Laser Tweets</a> because we all need something ridiculous to do.</p>
@@ -35,6 +35,6 @@ export default function Home() {
         <h2 className="mb-2">Get in touch</h2>
         <p>I try to stay pretty accessible, but it may take a week or two to respond. Best ways to get in touch are on Twitter at <a href="http://twitter.com/Shpigford" rel="me">@Shpigford</a> or via email at <a href="mailto:josh@joshpigford.com" rel="me">josh@joshpigford.com</a>.</p>
       </section>
-    </Layout>
+    </ Layout>
   );
 }

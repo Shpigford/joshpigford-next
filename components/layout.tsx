@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function Layout(props) {
+export default function Layout(props: { title: any; desc: any; children: any; }) {
   const pageTitle = props.title ? `${props.title} - Josh Pigford` : 'Josh Pigford';
   const pageDesc = props.desc ? props.desc : 'Josh Pigford: Maker. Dabbler. Founder and CEO of Maybe.';
 
