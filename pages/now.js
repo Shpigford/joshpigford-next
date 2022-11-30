@@ -2,7 +2,7 @@
 import Layout from '../components/layout'
 import Head from 'next/head';
 
-export default function Investments() {
+export default function Now() {
   return (
     <Layout title="Now" desc="I've been doing tiny investments in startups since 2021, primarily to just get my feet wet and to diversify my high-level I've always got a number of things I'm dabbling in, but my primary focus is getting Maybe off the ground.ersonal finance holdings. Here are the investments I've made.">
       <div className="prose max-w-none">
